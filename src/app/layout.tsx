@@ -58,7 +58,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 			  sameAs: [
 				"https://github.com/OlivierMarteaux",
 				"https://linkedin.com/in/olivier-marteaux",
-				"https://x.com/OlivierMarteaux"
+				"https://x.com/OlivierMarteaux",
 				"https://instagram.com/olivier.marteaux"
 			  ],
 			}),
