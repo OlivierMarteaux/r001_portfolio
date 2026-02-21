@@ -13,11 +13,11 @@ Welcome to my personal portfolio built with **Next.js**, **React**, and **Tailwi
 
 This is my professional portfolio website, optimized for performance, responsiveness, and accessibility. It features:
 
-✔ Modern UI built with **Tailwind CSS**
-✔ Fast navigation using **Next.js**
-✔ SEO-friendly structure
-✔ Mobile-first and responsive design
-✔ Clean, reusable React components
+✔ Modern UI built with **Tailwind CSS**  
+✔ Fast navigation using **Next.js**  
+✔ SEO-friendly structure  
+✔ Mobile-first and responsive design  
+✔ Clean, reusable React components  
 
 ---
 
@@ -34,10 +34,10 @@ This is my professional portfolio website, optimized for performance, responsive
 
 ## 🔍 Key Features
 
-✔ Fully responsive (mobile, tablet, desktop)
-✔ Smooth scrolling navigation
-✔ SEO optimized and performance-focused
-✔ Clean, minimalistic UI
+✔ Fully responsive (mobile, tablet, desktop)  
+✔ Smooth scrolling navigation  
+✔ SEO optimized and performance-focused  
+✔ Clean, minimalistic UI  
 
 ---
 
@@ -153,8 +153,8 @@ Check out my journey and projects:
 
 Feel free to reach out — whether it’s a project idea, collaboration, or just to say hi!
 
-📧 **Email:** [olivier_marteaux@hotmail.com](mailto:olivier_marteaux@hotmail.com)
-🔗 **LinkedIn:** [https://linkedin.com/in/olivier-marteaux](https://linkedin.com/in/olivier-marteaux)
+📧 **Email:** [olivier_marteaux@hotmail.com](mailto:olivier_marteaux@hotmail.com)  
+🔗 **LinkedIn:** [https://linkedin.com/in/olivier-marteaux](https://linkedin.com/in/olivier-marteaux)  
 
 ---
 
