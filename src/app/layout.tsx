@@ -66,6 +66,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 			}),
 		  }}
 		/>
+		
+		{/* Analytics */}
+        <Analytics />
+        <SpeedInsights />
 
         <Navbar />
         <main className="bg-gradient-to-br from-slate-950 via-slate-900 to-black text-white min-h-screen">
