@@ -1,36 +1,174 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# 📌 *Olivier Marteaux* — Portfolio
 
-First, run the development server:
+Welcome to my personal portfolio built with **Next.js**, **React**, and **Tailwind CSS** — crafted to showcase my projects, skills, and experience as a developer.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+<!-- 👉 **Live Demo:** [https://your-portfolio-url.com](https://your-portfolio-url.com)-->
+📁 **Source Code:** [https://github.com/OlivierMarteaux/r001_portfolio.git](https://github.com/OlivierMarteaux/r001_portfolio.git) 
+
+---
+
+## 🚀 About This Project
+
+This is my professional portfolio website, optimized for performance, responsiveness, and accessibility. It features:
+
+✔ Modern UI built with **Tailwind CSS**
+✔ Fast navigation using **Next.js**
+✔ SEO-friendly structure
+✔ Mobile-first and responsive design
+✔ Clean, reusable React components
+
+---
+
+## 🧠 Technologies Used
+
+| Technology                        | Purpose                               |
+| --------------------------------- | ------------------------------------- |
+| 🧰 **Next.js**                    | React framework for performance & SSR |
+| ⚛️ **React**                      | UI component library                  |
+| 🎨 **Tailwind CSS**               | Utility-first styling                 |
+| 📦 **Vercel**                     | Deployment                            |
+
+---
+
+## 🔍 Key Features
+
+✔ Fully responsive (mobile, tablet, desktop)
+✔ Smooth scrolling navigation
+✔ SEO optimized and performance-focused
+✔ Clean, minimalistic UI
+
+---
+
+
+## 🧱 Folder Structure
+
+```
+├── public/
+│   └── assets/
+├── src/
+│   ├── components/
+│   ├── data/
+│   └── app/
+├── next.config.js
+└── package.json
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ⚙️ Installation & Setup
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. **Clone the repository**
 
-## Learn More
+   ```bash
+   git clone https://github.com/OlivierMarteaux/r001_portfolio.git
+   cd r001_portfolio
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. **Install dependencies**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. **Run the development server**
 
-## Deploy on Vercel
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. **Build for production**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   ```bash
+   npm run build
+   # or
+   yarn build
+   ```
+
+5. **Preview production build**
+
+   ```bash
+   npm run start
+   # or
+   yarn start
+   ```
+
+---
+
+## 📥 Deployment
+
+This project is optimized for **Vercel deployment**:
+
+1. Push your code to GitHub.
+2. Connect repository on Vercel.
+3. Set environment variables *(if applicable)*.
+4. Deploy with automatic CI/CD.
+
+---
+
+## 🧩 Customization
+
+You can personalize this portfolio by:
+
+* Updating your bio and contact info
+* Replacing project screenshots
+* Adding new project pages
+* Customizing color theme in Tailwind config
+* Integrating CMS like Sanity, Contentful, or Strapi
+
+---
+
+## 🧰 Useful Scripts
+
+| Script           | Description              |
+| ---------------- | ------------------------ |
+| `npm run dev`    | Start development server |
+| `npm run build`  | Build production app     |
+| `npm run start`  | Start production server  |
+| `npm run lint`   | Run ESLint               |
+| `npm run format` | Format with Prettier     |
+
+---
+
+## 🧑‍💼 About Me
+
+_Olivier Marteaux_  
+Former aerospace engineer turned Android developer.
+
+Read more about my transition on [LinkedIn](https://linkedin.com/in/olivier-marteaux).  
+Check out my journey and projects:
+- 🔗 [Google Developer Profile](https://g.dev/OlivierMarteaux)
+- 💻 [GitHub Projects](https://github.com/OlivierMarteaux)
+- 📢 [LinkedIn Post – Career Change](https://www.linkedin.com/posts/olivier-marteaux_androidbasics-careerchange-androiddevelopment-activity-7351370158369628164-FmqZ?utm_source=share&utm_medium=member_desktop&rcm=ACoAACynrz8BkrhJFrStq3CEX6rQIEfnG7goFdg)
+
+
+---
+
+## 💬 Get In Touch
+
+Feel free to reach out — whether it’s a project idea, collaboration, or just to say hi!
+
+📧 **Email:** [olivier_marteaux@hotmail.com](mailto:olivier_marteaux@hotmail.com)
+🔗 **LinkedIn:** [https://linkedin.com/in/olivier-marteaux](https://linkedin.com/in/olivier-marteaux)
+
+---
+
+## ⭐ Credits & Acknowledgements
+
+Thanks to the creators of:
+
+* Next.js — [https://nextjs.org](https://nextjs.org)
+* Tailwind CSS — [https://tailwindcss.com](https://tailwindcss.com)
+* Awesome open-source community
+
+---
+
+## 📜 License
+
+This repository is licensed under the **MIT License**.
+See `LICENSE` for details.
