@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://yourdomain.com'), // Replace with your actual domain
   title: "Olivier Marteaux – Android Developer | Kotlin, Jetpack Compose, MVVM",
   description:
     "Android Developer specialized in Kotlin, Jetpack Compose, MVVM architecture, Firebase, and clean architecture. Portfolio showcasing modern Android projects and production-ready mobile applications.",

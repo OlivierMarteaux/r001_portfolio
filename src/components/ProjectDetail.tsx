@@ -1,11 +1,12 @@
 "use client";
 
+import { Project } from "@/data/projects";
 import { useState } from "react";
 import { FaGithub, FaPlay, FaArrowLeft } from "react-icons/fa";
 import Link from "next/link";
 
 interface Props {
-  project: ProjectDetail;
+  project: Project;
 }
 
 export default function ProjectDetail({ project }: Props) {

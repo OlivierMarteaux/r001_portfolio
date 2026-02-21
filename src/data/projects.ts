@@ -1,4 +1,3 @@
-import { ReactNode } from "react";
 
 export interface Project {
   id: string; // unique identifier for route
@@ -6,8 +5,8 @@ export interface Project {
   cardDescription: string;
   cardSkills: string;
   title: string;
-  description: ReactNode;
-  github?: string;
+  description: string;
+  github: string;
   demo?: string;
   features: string[];
   techStack: { [key: string]: string };

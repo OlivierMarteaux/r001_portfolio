@@ -31,7 +31,7 @@ export default function Experience() {
         </div>
 
       </div>
-    </section>,
+    </section>
 	
   );
 }
