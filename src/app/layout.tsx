@@ -5,7 +5,7 @@ import Navbar from "@/components/Navbar";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://yourdomain.com'), // Replace with your actual domain
+  metadataBase: new URL('https://oliviermarteaux.dev'), // Replace with your actual domain
   title: "Olivier Marteaux – Android Developer | Kotlin, Jetpack Compose, MVVM",
   description:
     "Android Developer specialized in Kotlin, Jetpack Compose, MVVM architecture, Firebase, and clean architecture. Portfolio showcasing modern Android projects and production-ready mobile applications.",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     title: "Olivier Marteaux – Android Developer",
     description:
       "Portfolio showcasing Kotlin, Jetpack Compose and modern Android architecture projects.",
-    url: "https://yourdomain.com", // replace with your real domain
+    url: "https://oliviermarteaux.dev", // replace with your real domain
     siteName: "Olivier Marteaux Portfolio",
     images: [
       {
@@ -54,11 +54,12 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 			  "@type": "Person",
 			  name: "Olivier Marteaux",
 			  jobTitle: "Android Developer",
-			  url: "https://yourdomain.com",
+			  url: "https://oliviermarteaux.dev",
 			  sameAs: [
 				"https://github.com/OlivierMarteaux",
 				"https://linkedin.com/in/olivier-marteaux",
 				"https://x.com/OlivierMarteaux"
+				"https://instagram.com/olivier.marteaux"
 			  ],
 			}),
 		  }}
