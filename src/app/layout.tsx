@@ -1,4 +1,5 @@
 import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import "./globals.css";
 import { ReactNode } from "react";
 import Navbar from "@/components/Navbar";
