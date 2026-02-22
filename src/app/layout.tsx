@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://oliviermarteaux.dev'), // Replace with your actual domain
   title: "Olivier Marteaux – Android Developer | Kotlin, Jetpack Compose, MVVM",
   description:
-    "Android Developer specialized in Kotlin, Jetpack Compose, MVVM architecture, Firebase, and clean architecture. Portfolio showcasing modern Android projects and production-ready mobile applications.",
+    "Android Developer specialized in Kotlin, Jetpack Compose, MVVM architecture, Firebase. Portfolio showcasing modern Android projects and production-ready mobile applications.",
   keywords: [
     "Android Developer",
     "Kotlin Developer",
@@ -24,21 +24,30 @@ export const metadata: Metadata = {
   ],
 
   openGraph: {
-    title: "Olivier Marteaux – Android Developer",
+    title: "Olivier Marteaux – Android Developer | Kotlin, Jetpack Compose, MVVM",
     description:
-      "Portfolio showcasing Kotlin, Jetpack Compose and modern Android architecture projects.",
+      "Android Developer specialized in Kotlin, Jetpack Compose and modern Android architecture.",
     url: "https://oliviermarteaux.dev", // replace with your real domain
     siteName: "Olivier Marteaux Portfolio",
     images: [
       {
-        url: "/avatar.jpg",
-        width: 800,
-        height: 600,
-        alt: "Olivier Marteaux Android Developer",
+        url: "/og-image.jpg", // Replace avatar.jpg with a real 1200x630 banner
+        width: 1200,
+        height: 630,
+        alt: "Olivier Marteaux – Android Developer",
       },
     ],
     locale: "en_US",
     type: "website",
+  },
+  
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Olivier Marteaux – Android Developer | Kotlin, Jetpack Compose, MVVM",
+    description:
+      "Android Developer specialized in Kotlin, Jetpack Compose and modern Android architecture.",
+    images: ["/og-image.jpg"],
   },
 };
 
