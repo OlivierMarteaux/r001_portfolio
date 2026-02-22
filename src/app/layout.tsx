@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     siteName: "Olivier Marteaux Portfolio",
     images: [
       {
-		url: "/rebonnte.png", 
+		url: "/banner.jpg", 
 		width: 800, 
 		height: 600, 
 		alt: "Olivier Marteaux Android Developer", 
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
       "Olivier Marteaux – Android Developer | Kotlin, Jetpack Compose, MVVM",
     description:
       "Android Developer specialized in Kotlin, Jetpack Compose and modern Android architecture.",
-    images: ["/rebonnte.png"],
+    images: ["/banner.jpg"],
   },
 };
 
