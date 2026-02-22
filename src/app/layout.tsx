@@ -36,12 +36,6 @@ export const metadata: Metadata = {
 		height: 600, 
 		alt: "Olivier Marteaux Android Developer", 
 	  },
-      {/*{
-        url: "/og-image.png", // Replace avatar.jpg with a real 1200x630 banner
-        width: 1200,
-        height: 630,
-        alt: "Olivier Marteaux – Android Developer",
-      },*/}
     ],
     locale: "en_US",
     type: "website",
