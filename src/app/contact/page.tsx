@@ -1,4 +1,4 @@
-import { FaLinkedin, FaGithub, FaInstagram, FaEnvelope } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaInstagram, FaYoutube, FaEnvelope } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 export default function Contact() {
@@ -66,6 +66,17 @@ export default function Contact() {
 		>
 		  <FaInstagram size={20} />
 		</a>
+		
+		{/* Youtube Button */}
+		<a
+		  href="https://www.youtube.com/@oliviermarteaux"
+		  target="_blank"
+		  rel="noopener noreferrer"
+		  className="bg-red-500 px-3 py-3 rounded-xl text-white font-semibold flex items-center gap-2 hover:opacity-90 transition"
+		>
+		  <FaYoutube size={20} />
+		</a>
+		
       </div>
     </section>
   );
