@@ -70,7 +70,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 				"https://github.com/OlivierMarteaux",
 				"https://linkedin.com/in/olivier-marteaux",
 				"https://x.com/OlivierMarteaux",
-				"https://instagram.com/olivier.marteaux"
+				"https://instagram.com/olivier.marteaux",
+				"https://www.youtube.com/@oliviermarteaux"
 			  ],
 			}),
 		  }}
