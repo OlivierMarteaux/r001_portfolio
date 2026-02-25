@@ -16,6 +16,8 @@ export const skills = [
 	"Coil",
 	"CameraX",
 	"GoogleMaps APIs",
+	"GooglePay",
+	"Stripe",
     "Dependency Injection",
 	"Hilt",
 	"Koin",

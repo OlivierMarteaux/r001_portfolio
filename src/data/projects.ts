@@ -78,17 +78,18 @@ export const projects: Project[] = [
   
 	{
 		id: "joiefull",
-		cardTitle: "Joiefull - Clothing Catalog Android App",
-		cardSkills: "Android • Kotlin • MVVM • Jetpack Compose • Ktor • Coil • RESTful API • Jetpack Adaptive Layout • Talkback • Render",
-		cardDescription: "Developed Joiefull, a clothing showcase Android application built with a modern MVVM architecture to ensure scalability and production readiness. Designed adaptive layouts optimized for phones, tablets, and foldables using responsive Jetpack Compose principles to deliver a seamless cross-device experience. Implemented an accessibility-first strategy with full TalkBack support, semantic descriptions, state announcements, and custom accessibility actions to guarantee inclusive usability. Connected the app to a custom RESTful Clothes API backend hosted on Render.com, enabling reliable catalog delivery, structured network handling, and an online-first reactive UI. Built with Kotlin, Coroutines, and modern Android best practices, emphasizing clean architecture, separation of concerns, and high code quality.",
+		cardTitle: "Joiefull - Clothing Shop Android App",
+		cardSkills: "Android • Kotlin • MVVM • Jetpack Compose • GooglePay • Stripe • Ktor • Coil • RESTful API • Jetpack Adaptive Layout • Talkback • Render",
+		cardDescription: "Developed Joiefull, a clothing showcase Android application built with a modern MVVM architecture to ensure scalability and production readiness. Designed adaptive layouts optimized for phones, tablets, and foldables using responsive Jetpack Compose principles to deliver a seamless cross-device experience. Implemented an accessibility-first strategy with full TalkBack support, semantic descriptions, state announcements, and custom accessibility actions to guarantee inclusive usability. Connected the app to a custom RESTful Clothes API backend hosted on Render.com, enabling reliable catalog delivery, structured network handling, and an online-first reactive UI. Integrated secure item payments via Google Pay or credit card using Stripe. Built with Kotlin, Coroutines, and modern Android best practices, emphasizing clean architecture, separation of concerns, and high code quality.",
 		github: "https://github.com/OlivierMarteaux/A049_Joiefull.git",
-		demo: "/assets/A049_Joiefull.mp4",
-		title: "📱 Joiefull – Clothing Catalog Android App",
-		description: "Joiefull is a Kotlin/Jetpack Compose Android application developed entirely from scratch. It showcases a modern clothing catalog experience with full support for adaptive layout, accessibility, and multilingual use.",
+		demo: "/assets/A049_Joiefull_2.0.0.mp4",
+		title: "📱 Joiefull – Clothing Shop Android App",
+		description: "Joiefull is a Kotlin/Jetpack Compose Android application developed entirely from scratch. It showcases a modern clothing catalog experience with full support for adaptive layout, accessibility, and payment feature.",
 		features: [
 		  "📱 Adaptive Layouts optimized for phones, tablets, and foldables",
 		  "♿ Accessibility-first approach with full TalkBack support, semantic descriptions, and custom actions",
 		  "🌍 Internationalization: English & French",
+		  "💳 Secure item payments via Google Pay or Credit Card using Stripe",
 		  "🔌 Custom Shared Android Library on Render.com",
 		  "☁️ Custom RESTful Clothes API backend on Render.com"
 		],
@@ -100,6 +101,7 @@ export const projects: Project[] = [
 		  "Data Storage": "Custom RESTFul API deployed on Render",
 		  "Data Access Service": "Ktor",
 		  "Background Work": "Kotlin Coroutines, Flows",
+		  "Payment Handling": "GPay and Stripe",
 		  "Image Handling": "URI-based storage in internal memory using Coil",
 		  "Accessibility-First": "Optimized for TalkBack users",
 		  "Dependency Injection": "Koin",
