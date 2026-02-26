@@ -16,6 +16,7 @@ interface Props {
     techStack: { [key: string]: string };
     github: string;
     demo?: string;
+	gameUrl?: string;
   };
 }
 
