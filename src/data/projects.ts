@@ -10,10 +10,41 @@ export interface Project {
   demo?: string;
   features: string[];
   techStack: { [key: string]: string };
+  gameUrl?: string;
 }
 
 
 export const projects: Project[] = [
+
+	{
+		id: "brickbreaker",
+		cardTitle: "Brick Breaker - A brick breaking web app game",
+		cardSkills: "React • Vite • Tailwind CSS • Firebase",
+		cardDescription: "Developed the BrickBreaker web game as a responsive single-page application with React and Vite. Implemented Firebase Authentication to allow players to create accounts or play as guests, and built a ranking system to store and display high scores persistently. Designed modular and interactive gameplay, including paddle and ball physics, brick collision detection, and real-time game timers. Focused on responsive UI for desktop and mobile, managing state through React hooks and context. Hosted the application using Firebase Hosting, ensuring fast load times and smooth user experience. Applied clean code practices, component reusability, and asynchronous state handling to create a production-ready web game.",
+		github: "https://github.com/OlivierMarteaux/r002_first_brick_breaker.git",
+		demo: "/assets/r002_first_brick_breaker.mp4",
+		title: "📱 Brick Breaker - A brick breaking web app game",
+		description: "A modern Brick Breaker game built with React + Vite. Destroy all the bricks, keep the ball in play, and beat your high score!"
+		,
+		features: [
+		  "🕹️ Classic brick breaker gameplay",
+		  "🎯 Persistent Score tracking hosted on Firebase Firestore",
+		  "🧱 Brick collision detection",
+		  "🏓 Paddle movement controls",
+		  "💥 Ball physics & bounce logic",
+		  "❤️ Lives system",
+		  "🔁 Game reset functionality",
+		  "⚡ Built with Vite for fast development"
+		],
+		techStack: {
+		  "Frontend": "React / Vite / Tailwind CSS",
+		  "Backend": "Firebase Firestore",
+		  "Authentication": "Firebase Authentication",
+		  "Hosting": "Firebase Hosting",
+		},
+		gameUrl: "https://brickbreaker.oliviermarteaux.dev"
+	},
+
 	{
 		id: "tajmahal",
 		cardTitle: "Taj Mahal – Restaurant Rating Android App",

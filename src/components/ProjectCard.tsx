@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { FaGithub, FaPlay, FaArrowRight } from "react-icons/fa";
+import { Gamepad2 } from 'lucide-react';
 
 interface Props {
   project: {
@@ -90,6 +91,15 @@ export default function ProjectCard({ project }: Props) {
 			  >
 				<FaPlay size={20} />
 			  </button>
+			)}
+			
+			{project.gameUrl && (
+			<a
+			  href={project.gameUrl}
+			  className="bg-emerald-500 px-3 py-3 rounded-xl text-zinc-950 font-semibold flex items-center gap-2 hover:bg-emerald-400 transition"
+			>
+			  <Gamepad2 size={20} />
+			</a>
 			)}
 			
 			<Link

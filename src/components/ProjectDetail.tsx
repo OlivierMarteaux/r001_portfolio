@@ -4,6 +4,7 @@ import { Project } from "@/data/projects";
 import { useState } from "react";
 import { FaGithub, FaPlay, FaArrowLeft } from "react-icons/fa";
 import Link from "next/link";
+import { Gamepad2 } from 'lucide-react';
 
 interface Props {
   project: Project;
@@ -39,6 +40,14 @@ export default function ProjectDetail({ project }: Props) {
 		  >
 			<FaPlay size={20} /> Play Video
 		  </button>
+		)}
+		{project.gameUrl && (
+			<a
+			  href={project.gameUrl}
+			  className="bg-emerald-500 px-6 py-3 rounded-xl text-zinc-950 font-semibold flex items-center gap-2 hover:bg-emerald-400 transition"
+			>
+			  <Gamepad2 size={20} /> Play Game
+			</a>
 		)}
       </div>
 
