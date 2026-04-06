@@ -76,6 +76,7 @@ export default function ProjectCard({ project }: Props) {
 		</a>*/}
 		  
 			{/* GitHub Button */}
+			{project.github && (
 			<a
 			  href={project.github}
 			  target="_blank"
@@ -84,6 +85,7 @@ export default function ProjectCard({ project }: Props) {
 			>
 				<FaGithub size={20} />
 			</a>
+			)}
 			
 			{project.demo && (
 			  <button

@@ -1,3 +1,7 @@
+export interface PolicyItem {
+  name: string; // The display name of the policy
+  url: string;  // The link to the policy page or file
+}
 
 export interface Project {
   id: string; // unique identifier for route
@@ -6,15 +10,51 @@ export interface Project {
   cardSkills: string;
   title: string;
   description: string;
-  github: string;
+  github?: string;
   demo?: string;
   features: string[];
   techStack: { [key: string]: string };
   gameUrl?: string;
+  policy?: PolicyItem[]; // Optional array of policies
 }
 
 
 export const projects: Project[] = [
+
+	{
+		id: "a056_brickbreaker",
+		cardTitle: "BrickBreaker - A brick breaking Android Game",
+		cardSkills: "Kotlin • Jetpack Compose • Canvas • Firebase",
+		cardDescription: "Developed a modern version of the classic Brick Breaker arcade game entirely in Jetpack Compose. Implemented dynamic brick grid generation, smooth paddle control, and ball physics with collision detection. Built custom visuals with gradients, shadows, and glow effects using the Compose Canvas API. Managed real-time game state and rendering efficiently with mutableStateOf and functional grid mapping. Focused on scalable, modular architecture separating game elements and logic. Applied Kotlin best practices for state-driven UI, functional programming, and clean code. Demonstrated ability to implement interactive gameplay, manual physics, and high-quality graphics in a production-like Android project.",
+		demo: "/assets/A056_BrickBreaker.mp4",
+		title: "📱 BrickBreaker - A brick breaking Android Game",
+		description: "A modern Brick Breaker game built with Kotlin and Jetpack Compose. Destroy all the bricks, keep the ball in play, and beat your high score!"
+		,
+		features: [
+		  "🕹️ Classic brick breaker gameplay",
+		  "🎯 Persistent Score tracking hosted on Firebase Firestore",
+		  "🧱 Brick collision detection",
+		  "🏓 Paddle movement controls",
+		  "💥 Ball physics & bounce logic",
+		  "⚡ Built Kotlin and Jetpack Compose"
+		],
+		techStack: {
+			"Language": "Kotlin",
+			"UI": "Jetpack Compose, Material 3",
+			"Architecture": "MVVM, ViewModel, State Management",
+			"Navigation": "Jetpack Navigation Compose",
+			"Authentication": "Firebase Authentication, Google Credential",
+			"Backend": "Firebase Firestore",
+			"Crash Analysis": "Firebase CrashLytics",
+			"Background Work": "Kotlin Coroutines, Flows",
+			"Dependency Injection": "Dagger/Hilt",
+			"Build": "Gradle (KTS)",
+			"Continuous Delivery": "Firebase App Distribution, GitHub Action"
+		},
+		policy: [
+			{ name: "Privacy Policy", url: "/projects/${project.id}/privacy-policy" },
+		]
+	},
 
 	{
 		id: "brickbreaker",

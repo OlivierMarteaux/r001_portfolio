@@ -5,6 +5,7 @@ import { useState } from "react";
 import { FaGithub, FaPlay, FaArrowLeft } from "react-icons/fa";
 import Link from "next/link";
 import { Gamepad2 } from 'lucide-react';
+import { privacies } from "@/data/privacies";
 
 interface Props {
   project: Project;
@@ -12,6 +13,7 @@ interface Props {
 
 export default function ProjectDetail({ project }: Props) {
 	const [isModalOpen, setIsModalOpen] = useState(false);
+	const privacy = privacies.find(p => p.id === project.id);
 	
   return (
     <section className="max-w-6xl mx-auto space-y-8 px-6 py-12">
@@ -75,6 +77,23 @@ export default function ProjectDetail({ project }: Props) {
           </tbody>
         </table>
       </section>
+	  
+	  {/* Policies */}
+      {privacy && (
+	  <section className="space-y-4">
+		<h3 className="text-2xl font-semibold">📜 Policies</h3>
+		<ul className="list-disc list-inside text-slate-300 space-y-2">
+		  <li>
+			<Link
+			  href={`/projects/${project.id}/privacy-policy`}
+			  className="text-blue-400 hover:underline"
+			>
+			  View Privacy Policy
+			</Link>
+		  </li>
+		</ul>
+	  </section>
+	)}
 
       {/* Back Button */}
       <Link href="/projects" className="bg-blue-700 px-6 py-3 rounded-xl text-white font-semibold flex items-center gap-2 hover:bg-blue-800 transition">
