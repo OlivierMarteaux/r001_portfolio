@@ -7,6 +7,7 @@ export default function sitemap() {
     { url: "https://oliviermarteaux.dev/projects", lastModified: new Date() },
     { url: "https://oliviermarteaux.dev/skills", lastModified: new Date() },
     { url: "https://oliviermarteaux.dev/contact", lastModified: new Date() },
+	{ url: "https://brickbreaker.oliviermarteaux.dev/", lastModified: new Date() },
   ];
 
   // Generate dynamic URLs for each project
