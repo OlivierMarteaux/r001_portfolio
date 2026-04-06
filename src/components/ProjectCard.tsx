@@ -14,7 +14,7 @@ interface Props {
 	description: string;
 	features: string[];
     techStack: { [key: string]: string };
-    github: string;
+    github?: string;
     demo?: string;
 	gameUrl?: string;
   };

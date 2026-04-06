@@ -1,7 +1,7 @@
 "use client";
 
 import { use } from "react";
-import { Privacy } from "@data/privacies";
+import { Privacy } from "@/data/privacies";
 import Link from "next/link";
 import { FaArrowLeft } from "react-icons/fa";
 
