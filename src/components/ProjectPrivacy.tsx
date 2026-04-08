@@ -54,8 +54,13 @@ export default function ProjectPrivacy({ privacy }: Props) {
         <p>
           {privacy.security}
         </p>
+		
+		<h2 className="text-2xl font-semibold">6. Account and Data Deletion</h2>
+        <p>
+          {privacy.deletion}
+        </p>
 
-        <h2 className="text-2xl font-semibold">6. Contact Us</h2>
+        <h2 className="text-2xl font-semibold">7. Contact Us</h2>
         <p>
           If you have questions about this Privacy Policy, please contact us at:{" "}
           <a
