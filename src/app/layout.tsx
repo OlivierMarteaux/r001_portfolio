@@ -3,6 +3,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 import "./globals.css";
 import { ReactNode } from "react";
 import Navbar from "@/components/Navbar";
+import FirebaseAnalytics from "@/components/FirebaseAnalytics";
 
 import type { Metadata } from "next";
 
@@ -80,6 +81,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 		{/* Analytics */}
         <Analytics />
         <SpeedInsights />
+
+    {/* Firebase Analytics */}
+        <FirebaseAnalytics />
 
         <Navbar />
         <main className="bg-gradient-to-br from-slate-950 via-slate-900 to-black text-white min-h-screen">

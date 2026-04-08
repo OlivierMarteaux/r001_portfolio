@@ -6,6 +6,8 @@ import { FaGithub, FaPlay, FaArrowLeft } from "react-icons/fa";
 import Link from "next/link";
 import { Gamepad2 } from 'lucide-react';
 import { privacies } from "@/data/privacies";
+import { logEvent } from "firebase/analytics";
+import { getFirebaseAnalytics } from "@/lib/firebase";
 
 interface Props {
   project: Project;
@@ -14,6 +16,15 @@ interface Props {
 export default function ProjectDetail({ project }: Props) {
 	const [isModalOpen, setIsModalOpen] = useState(false);
 	const privacy = privacies.find(p => p.id === project.id);
+
+  const handleClick = async () => {
+    const analytics = await getFirebaseAnalytics();
+    if (analytics) {
+      logEvent(analytics, "privacy_policy_click", {
+        project: project.title,
+      });
+    }
+  };
 	
   return (
     <section className="max-w-6xl mx-auto space-y-8 px-6 py-12">
@@ -87,6 +98,7 @@ export default function ProjectDetail({ project }: Props) {
 			<Link
 			  href={`/projects/${project.id}/privacy-policy`}
 			  className="text-blue-400 hover:underline"
+        onClick={handleClick}
 			>
 			  View Privacy Policy
 			</Link>
