@@ -63,6 +63,41 @@ export default function ProjectDetail({ project }: Props) {
 			</a>
 		)}
       </div>
+	  
+	  	  {/* EarlyAccess */}
+      {project.earlyAccess && (
+	  <section className="space-y-4">
+		<h3 className="text-2xl font-semibold">🎮 Early Access !!!</h3>
+		<p className="text-slate-400 text-lg leading-relaxed">
+			Come try my app in early access! 🚀
+		</p>
+		<ul className="list-disc list-inside text-slate-300 space-y-2">
+		  <li>
+			<Link
+			  href = {project.earlyAccess.googleGroupUrl}
+			  target="_blank"
+			  rel="noopener noreferrer"
+			  className="text-blue-400 hover:underline"
+			>
+			  First, click here to join the Google Group to get access.
+			</Link>
+		  </li>
+      <li>
+			<Link
+			  href = {project.earlyAccess.googlePlayUrl}
+			  			  target="_blank"
+			  rel="noopener noreferrer"
+			  className="text-blue-400 hover:underline"
+			>
+			  Once you've joined the Google Group, click here to join the Google Play test campaign and install the game from an Android device.
+			</Link>
+		  </li>
+		</ul>
+    <p className="text-slate-400 text-lg leading-relaxed">
+			Have fun and provide your feedback!
+		</p>
+	  </section>
+	)}
 
       {/* Features */}
       <section className="space-y-4">

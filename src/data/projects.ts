@@ -3,6 +3,11 @@ export interface PolicyItem {
   url: string;  // The link to the policy page or file
 }
 
+export interface EarlyAccessItem {
+	googleGroupUrl: string;
+	googlePlayUrl: string;
+}
+
 export interface Project {
   id: string; // unique identifier for route
   cardTitle: string;
@@ -16,6 +21,7 @@ export interface Project {
   techStack: { [key: string]: string };
   gameUrl?: string;
   policy?: PolicyItem[]; // Optional array of policies
+  earlyAccess?: EarlyAccessItem;
 }
 
 
@@ -53,7 +59,11 @@ export const projects: Project[] = [
 		},
 		policy: [
 			{ name: "Privacy Policy", url: "/projects/${project.id}/privacy-policy" },
-		]
+		],
+		earlyAccess:{
+			googleGroupUrl: "https://groups.google.com/g/brickbreaker-test",
+			googlePlayUrl: "https://play.google.com/store/apps/details?id=com.oliviermarteaux.a056_bricksbreaker",
+		}
 	},
 
 	{
