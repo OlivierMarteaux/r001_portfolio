@@ -69,7 +69,7 @@ export default function ProjectDetail({ project }: Props) {
 	  <section className="space-y-4">
 		<h3 className="text-2xl font-semibold">🎮 Early Access !!!</h3>
 		<p className="text-slate-400 text-lg leading-relaxed">
-			Come try my app in early access! 🚀
+			Come try my app in early access! 🚀 (Available from France, UK, US)
 		</p>
 		<ul className="list-disc list-inside text-slate-300 space-y-2">
 		  <li>
