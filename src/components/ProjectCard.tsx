@@ -3,6 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { FaGithub, FaPlay, FaArrowRight } from "react-icons/fa";
 import { Gamepad2 } from 'lucide-react';
+import { trackEvent } from "@/lib/analytics";
 
 interface Props {
   project: {
@@ -32,6 +33,10 @@ export default function ProjectCard({ project }: Props) {
     !isExpanded && isLong
 	  ? project.cardDescription.slice(0, MAX_LENGTH)
 	  : project.cardDescription;
+	  
+  const handleClick = (action: string) => {
+    trackEvent(`om_projectcard_${project.id}_${action}_click`);
+  };
 
   return (
     <>
@@ -82,6 +87,7 @@ export default function ProjectCard({ project }: Props) {
 			  target="_blank"
 			  rel="noopener noreferrer"
 			  className="bg-gray-800 px-3 py-3 rounded-xl text-white font-semibold flex items-center gap-2 hover:bg-gray-900 transition"
+			  onClick={() => handleClick("github")}
 			>
 				<FaGithub size={20} />
 			</a>
@@ -89,7 +95,10 @@ export default function ProjectCard({ project }: Props) {
 			
 			{project.demo && (
 			  <button
-				onClick={() => setIsModalOpen(true)}
+				onClick={() => {
+				  handleClick("video");
+				  setIsModalOpen(true);
+				}}
 				className="bg-green-600 px-3 py-3 rounded-xl text-white font-semibold flex items-center gap-2 hover:bg-green-700 transition"
 			  >
 				<FaPlay size={20} />
@@ -100,6 +109,7 @@ export default function ProjectCard({ project }: Props) {
 			<a
 			  href={project.gameUrl}
 			  className="bg-emerald-500 px-3 py-3 rounded-xl text-zinc-950 font-semibold flex items-center gap-2 hover:bg-emerald-400 transition"
+			  onClick={() => handleClick("game")}
 			>
 			  <Gamepad2 size={20} />
 			</a>
@@ -108,6 +118,7 @@ export default function ProjectCard({ project }: Props) {
 			<Link
 			  href={`/projects/${project.id}`} // project page URL
 			  className="bg-blue-700 px-6 py-3 rounded-xl text-white font-semibold flex items-center gap-2 hover:bg-blue-800 transition"
+			  onClick={() => handleClick("project")}
 			>
 				<FaArrowRight size={20} /> Go to Project
 			</Link>

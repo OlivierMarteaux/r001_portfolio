@@ -6,8 +6,7 @@ import { FaGithub, FaPlay, FaArrowLeft } from "react-icons/fa";
 import Link from "next/link";
 import { Gamepad2 } from 'lucide-react';
 import { privacies } from "@/data/privacies";
-import { logEvent } from "firebase/analytics";
-import { getFirebaseAnalytics } from "@/lib/firebase";
+import { trackEvent } from "@/lib/analytics";
 
 interface Props {
   project: Project;
@@ -17,13 +16,8 @@ export default function ProjectDetail({ project }: Props) {
 	const [isModalOpen, setIsModalOpen] = useState(false);
 	const privacy = privacies.find(p => p.id === project.id);
 
-  const handleClick = async () => {
-    const analytics = await getFirebaseAnalytics();
-    if (analytics) {
-      logEvent(analytics, "privacy_policy_click", {
-        project: project.title,
-      });
-    }
+  const handleClick = (action: string) => {
+    trackEvent(`om_projectdetail_${project.id}_${action}_click`);
   };
 	
   return (
@@ -42,13 +36,17 @@ export default function ProjectDetail({ project }: Props) {
             target="_blank"
             rel="noopener noreferrer"
             className="bg-gray-800 px-6 py-3 rounded-xl text-white font-semibold flex items-center gap-2 hover:bg-gray-900 transition"
+			onClick={() => handleClick("github")}
           >
             <FaGithub size={20} /> GitHub
           </a>
         )}
         {project.demo && (
 		  <button
-			onClick={() => setIsModalOpen(true)}
+			onClick={() => {
+			  handleClick("video");
+			  setIsModalOpen(true);
+			}}
 			className="bg-green-600 px-6 py-3 rounded-xl text-white font-semibold flex items-center gap-2 hover:bg-green-700 transition"
 		  >
 			<FaPlay size={20} /> Play Video
@@ -58,6 +56,7 @@ export default function ProjectDetail({ project }: Props) {
 			<a
 			  href={project.gameUrl}
 			  className="bg-emerald-500 px-6 py-3 rounded-xl text-zinc-950 font-semibold flex items-center gap-2 hover:bg-emerald-400 transition"
+			  onClick={() => handleClick("game")}
 			>
 			  <Gamepad2 size={20} /> Play Game
 			</a>
@@ -78,6 +77,7 @@ export default function ProjectDetail({ project }: Props) {
 			  target="_blank"
 			  rel="noopener noreferrer"
 			  className="text-blue-400 hover:underline"
+			  onClick={() => handleClick("earlyaccessgroup")}
 			>
 			  First, click here to join the Google Group to get access.
 			</Link>
@@ -85,9 +85,10 @@ export default function ProjectDetail({ project }: Props) {
       <li>
 			<Link
 			  href = {project.earlyAccess.googlePlayUrl}
-			  			  target="_blank"
+			  target="_blank"
 			  rel="noopener noreferrer"
 			  className="text-blue-400 hover:underline"
+			  onClick={() => handleClick("earlyaccessplaystore")}
 			>
 			  Once you've joined the Google Group, click here to join the Google Play test campaign and install the game from an Android device.
 			</Link>
@@ -133,7 +134,7 @@ export default function ProjectDetail({ project }: Props) {
 			<Link
 			  href={`/projects/${project.id}/privacy-policy`}
 			  className="text-blue-400 hover:underline"
-        onClick={handleClick}
+			  onClick={() => handleClick("privacy-policy")}
 			>
 			  View Privacy Policy
 			</Link>
