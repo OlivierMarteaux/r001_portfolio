@@ -1,5 +1,5 @@
 import { FaLinkedin, FaGithub, FaInstagram, FaYoutube, FaEnvelope } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaXTwitter, FaTiktok } from "react-icons/fa6";
 
 export default function Contact() {
   return (
@@ -22,7 +22,7 @@ export default function Contact() {
           href="mailto:olivier_marteaux@hotmail.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-sky-500 px-3 py-3 rounded-xl text-black font-semibold flex items-center gap-2"
+          className="bg-sky-500 px-3 py-3 rounded-xl text-black font-semibold flex items-center gap-2 hover:bg-sky-600 hover:shadow-[0_0_20px_rgba(255,0,80,0.6)] transition"
         >
           <FaEnvelope size={20} />
         </a>
@@ -32,7 +32,7 @@ export default function Contact() {
           href="https://www.linkedin.com/in/olivier-marteaux/"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-blue-700 px-3 py-3 rounded-xl text-white font-semibold flex items-center gap-2 hover:bg-blue-800 transition"
+          className="bg-blue-700 px-3 py-3 rounded-xl text-white font-semibold flex items-center gap-2 hover:bg-blue-800 hover:shadow-[0_0_20px_rgba(255,0,80,0.6)] transition"
         >
           <FaLinkedin size={20} />
         </a>
@@ -42,7 +42,7 @@ export default function Contact() {
           href="https://github.com/OlivierMarteaux"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-gray-800 px-3 py-3 rounded-xl text-white font-semibold flex items-center gap-2 hover:bg-gray-900 transition"
+          className="bg-gray-800 px-3 py-3 rounded-xl text-white font-semibold flex items-center gap-2 hover:bg-gray-900 hover:shadow-[0_0_20px_rgba(255,0,80,0.6)] transition"
         >
           <FaGithub size={20} />
         </a>
@@ -52,7 +52,7 @@ export default function Contact() {
 		  href="https://x.com/OlivierMarteaux"
 		  target="_blank"
 		  rel="noopener noreferrer"
-		  className="bg-black px-3 py-3 rounded-xl text-white font-semibold flex items-center gap-2 hover:bg-gray-800 transition"
+		  className="bg-black px-3 py-3 rounded-xl text-white font-semibold flex items-center gap-2 hover:bg-gray-800 hover:shadow-[0_0_20px_rgba(255,0,80,0.6)] transition"
 		>
 		  <FaXTwitter size={20} />
 		</a>
@@ -62,7 +62,7 @@ export default function Contact() {
 		  href="https://instagram.com/olivier.marteaux"
 		  target="_blank"
 		  rel="noopener noreferrer"
-		  className="bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 px-3 py-3 rounded-xl text-white font-semibold flex items-center gap-2 hover:opacity-90 transition"
+		  className="bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 px-3 py-3 rounded-xl text-white font-semibold flex items-center gap-2 hover:from-pink-600 hover:via-red-600 hover:to-yellow-600 hover:shadow-[0_0_12px_rgba(255,0,80,0.8),0_0_20px_rgba(255,200,0,0.6)] transition"
 		>
 		  <FaInstagram size={20} />
 		</a>
@@ -72,9 +72,19 @@ export default function Contact() {
 		  href="https://www.youtube.com/@oliviermarteaux"
 		  target="_blank"
 		  rel="noopener noreferrer"
-		  className="bg-red-500 px-3 py-3 rounded-xl text-white font-semibold flex items-center gap-2 hover:opacity-90 transition"
+		  className="bg-red-500 px-3 py-3 rounded-xl text-white font-semibold flex items-center gap-2 hover:bg-red-700 hover:shadow-[0_0_12px_rgba(255,0,80,0.8),0_0_20px_rgba(255,200,0,0.6)] transition"
 		>
 		  <FaYoutube size={20} />
+		</a>
+		
+		{/* TikTok Button */}
+		<a
+		  href="https://www.tiktok.com/@olivier.marteaux"
+		  target="_blank"
+		  rel="noopener noreferrer"
+		  className="bg-black px-3 py-3 rounded-xl text-white flex items-center gap-2 hover:bg-gray-800 hover:shadow-[0_0_20px_rgba(255,0,80,0.6)] transition"
+		>
+		  <FaTiktok size={20} />
 		</a>
 		
       </div>
