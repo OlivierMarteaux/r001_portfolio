@@ -17,7 +17,7 @@ export default function ProjectDetail({ project }: Props) {
 	const privacy = privacies.find(p => p.id === project.id);
 
   const handleClick = (action: string) => {
-    trackEvent(`om_projectdetail_${project.id}_${action}_click`);
+    trackEvent(`detail_${project.id}_${action}`);
   };
 	
   return (
@@ -77,7 +77,7 @@ export default function ProjectDetail({ project }: Props) {
 			  target="_blank"
 			  rel="noopener noreferrer"
 			  className="text-blue-400 hover:underline"
-			  onClick={() => handleClick("earlyaccessgroup")}
+			  onClick={() => handleClick("eagroup")}
 			>
 			  First, click here to join the Google Group to get access.
 			</Link>
@@ -88,7 +88,7 @@ export default function ProjectDetail({ project }: Props) {
 			  target="_blank"
 			  rel="noopener noreferrer"
 			  className="text-blue-400 hover:underline"
-			  onClick={() => handleClick("earlyaccessplaystore")}
+			  onClick={() => handleClick("eastore")}
 			>
 			  Once you've joined the Google Group, click here to join the Google Play test campaign and install the game from an Android device.
 			</Link>
@@ -134,7 +134,7 @@ export default function ProjectDetail({ project }: Props) {
 			<Link
 			  href={`/projects/${project.id}/privacy-policy`}
 			  className="text-blue-400 hover:underline"
-			  onClick={() => handleClick("privacy-policy")}
+			  onClick={() => handleClick("privacy")}
 			>
 			  View Privacy Policy
 			</Link>

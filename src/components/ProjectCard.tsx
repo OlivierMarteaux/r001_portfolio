@@ -35,7 +35,7 @@ export default function ProjectCard({ project }: Props) {
 	  : project.cardDescription;
 	  
   const handleClick = (action: string) => {
-    trackEvent(`om_projectcard_${project.id}_${action}_click`);
+    trackEvent(`card_${project.id}_${action}`);
   };
 
   return (

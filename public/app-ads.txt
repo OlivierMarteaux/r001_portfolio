@@ -1,0 +1,3 @@
+# app-ads.txt for Google AdMob:
+
+google.com, pub-3802131954373764, DIRECT, f08c47fec0942fa0
